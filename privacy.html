@@ -51,6 +51,14 @@
   <a href="https://myaccount.google.com/permissions">Google Account security settings</a>, after which the API Client can no
   longer access the channel.</p>
 
+  <h2>Data retention and deletion</h2>
+  <p>The API Client does not store any YouTube API data: it only sends our own videos, thumbnails, captions and metadata to
+  YouTube, and keeps no copy of data obtained from the API. The only stored item is the OAuth refresh token. To delete it, the
+  channel owner (1) revokes access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+  which invalidates the token immediately, and (2) deletes the token secret from the GitHub repository. Any temporary files
+  created during an upload run are discarded when the run ends (at most within 24 hours). Requests to delete data can be sent
+  to the contact address below and are completed within 7 days.</p>
+
   <h2>Cookies and tracking</h2>
   <p>This website and the API Client do not use cookies, analytics or tracking technologies.</p>
 
